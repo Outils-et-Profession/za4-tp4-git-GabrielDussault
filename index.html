@@ -5,53 +5,59 @@
         <title>Zone de jeu</title>
         <link rel="stylesheet" href="styles/style_tp4.css" type="text/css">
         <style>
-            #boutique{
-                text-decoration: underline 2px solid greenyellow;
-                width: 200px;
+            #boutique {
+                width: 175px;
                 height: 50px;
                 margin-bottom: 20px;
-                a:link, a:visited, a:active {
-                    color: greenyellow;
-                }
-                a:hover {
-                    color: green;
-                }
                 display: block;
                 margin: auto;
+                
+            }
+            #boutique a:link, #boutique a:visited{
+                text-decoration: underline 2px solid orangered;
+                color: rgb(255, 145, 0);
+            }
+            #boutique a:hover{
+                color: rgb(151, 40, 0);
+            }
+            #boutique img {
+                float: left;
             }
             h2{
-                text-decoration: underline 2px solid orange;
+                text-decoration: underline 2px solid orangered;
                 margin-bottom: 10px;
-                color: orange;
+                color: rgb(255, 145, 0);
             }
             img{
                 border-radius: 15px;
             }
             p {
-                text-align: center;
+                text-align: left;
             }
             #caracteristiques {
                 list-style-type: none;
                 padding: 0px;
                 text-align: left;
             }
-            li {
-                margin: 0px, 10px;
-                background-color: rgba(148, 71, 8, 0.546);
+            #caracteristiques li {
+                margin: 10px 0px;
+                background-color: rgba(193, 62, 6, 0.614);
                 padding: 15px;
                 border-radius: 5px;
             }
             #cgu{
                 text-align: left;
-                li {
-                    padding: 0px;
-                }
-                a:link, a:visited, a:active{
-                    text-decoration: none;
-                }
-                a:hover {
-                    text-decoration: underline;
-                }
+            }
+            #cgu li {
+                padding: 0px;
+            }
+            #cgu a:link, #cgu a:visited, #cgu a:active{
+                color:rgb(185, 94, 61);
+                text-decoration: none;
+            }
+            #cgu a:hover {
+                color: white;
+                background-color: rgba(193, 62, 6, 0.614);
             }
         </style>
     </head>
@@ -60,11 +66,11 @@
             <h1>Bienvenue sur Zone de Jeu, votre nouvelle plateforme de référence pour tous vos besoins en jeux vidéo ! </h1>
             <div id="boutique">
                 <img class="exempter" src="images/logo_boutique.png" alt="Logo boutique" width="25" height="25">
-                <a href="jeux.html">La boutique</a>
+                <h2><a href="jeux.html">La boutique</a></h2>
             </div>
         </div>
         <div>
-            <img class="icon" src="images/logo_zone_jeu.jpg" alt="Zone de Jeu" width="500" height="500">
+            <img src="images/logo_zone_jeu.jpg" alt="Zone de Jeu" width="500" height="500">
             <hr>
         </div>
         <div id="corps">

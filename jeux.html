@@ -4,15 +4,34 @@
         <meta charset="utf-8"/>
         <title>Jeux</title>
         <style>
-            td
-            {
-                border: 1px solid black;
+            td{
                 text-align: center;
             }
-            table
-            {
-                width: 500px;
+            caption {
+                font-style: italic;
+                text-decoration: underline;
+                margin: 10px;
+            }
+            table {
+                width: 320px;
                 border-collapse: collapse;
+            }
+            #categorie {
+                padding: 10px;
+            }
+            button {
+                background-color: rgb(216, 107, 34);
+                color: white;
+                font-weight: bold;
+                font-size: 14px;
+                border-radius: 12px;
+                height: 50px;
+                width: 100%;
+                border: none;
+
+            }
+            button:hover {
+                    background-color: rgb(133, 67, 22);
             }
         </style>
         <link rel="stylesheet" href="styles/style_tp4.css" type="text/css">
@@ -28,7 +47,7 @@
                 <td><strong>Shadow of the Nexus</strong></td>
                 <td><strong>Mystic Horizons</strong></td>
                 <td><strong>Iron Blade</strong></td>
-                <td rowspan="3" style="text-align: center"><strong><em>Uniquement cette semaine</em></strong></td>
+                <td class="categorie" rowspan="3" style="text-align: center"><strong><em>Uniquement cette semaine</em></strong></td>
             </tr>
             <tr>                    
                 <td><img src="images/shadow_1.webp" alt="Shadow of the Nexus" width="200" height="350"></td>
@@ -44,11 +63,11 @@
                 <td><strong>Victory Zone</strong></td>
                 <td><strong>Last Survivor - passe de combat</strong></td>
                 <td><strong>Skybound Adventure</strong></td>
-                <td rowspan="3" style="text-align: center"><strong><em>En promo</em></strong></td>
+                <td class="categorie" rowspan="3" style="text-align: center"><strong><em>En promo</em></strong></td>
             </tr>                
             <tr>
                 <td><img src="images/victory_1.png" alt="Victory Zone" width="200" height="350"></td>
-                <td><img src="images/last_3.webp" alt="Last Survivor" width="200" height="350"></td>
+                <td><img src="images/last_1.webp" alt="Last Survivor" width="200" height="350"></td>
                 <td><img src="images/skybound_2.webp" alt="Skybound Adventure" width="200" height="350"></td>
             </tr>
             <tr>
@@ -60,10 +79,10 @@
                 <td><strong>Eternal Quest</strong></td>
                 <td><strong>Sunny's Island</strong></td>
                 <td><strong>Urban Brawl</strong></td>
-                <td rowspan="3" style="text-align: center"><strong><em>Rétro</em></strong></td>
+                <td class="categorie" rowspan="3" style="text-align: center"><strong><em>Rétro</em></strong></td>
             </tr>
             <tr>
-                <td><img src="images/eternal_1.webp" alt="Eternal Quest" width="200" height="350"></td>
+                <td><img src="images/eternal_2.webp" alt="Eternal Quest" width="200" height="350"></td>
                 <td><img src="images/sunny_1.webp" alt="Sunny's Island" width="200" height="350"></td>
                 <td><img src="images/urban_1.webp" alt="Urban Brawl" width="200" height="350"></td>
             </tr>
